@@ -20,11 +20,11 @@ for i in range(lessonCount):
     
     lessonExam2 = float(input(f"{i+1},ders için final notu giriniz."))
     finalNotList.append(lessonExam2)
-    finalNotList2.append(f"{i+1}.ders {lessonExam1}")
+    finalNotList2.append(f"{i+1}.ders {lessonExam2}")
     
     totalExamNote = (lessonExam1 * 0.4) + (lessonExam2 * 0.6)
     lessonResult.append(totalExamNote)
-    lessonResult2.append(f"{i+1}.ders {lessonExam1}")
+    lessonResult2.append(f"{i+1}.ders {totalExamNote}")
     
     if totalExamNote >= 50:
         passedExams += 1
